@@ -1,4 +1,78 @@
-#logo {
-  left: 450px;
-  top: 450px;
+.kpc {
+  transform: translate(-50%, -50%);
+}
+
+.fade-in-image {
+  animation: fadeIn 3s infinite alternate;
+  -webkit-animation: fadeIn 3s infinite alternate;
+  -moz-animation: fadeIn 3s infinite alternate;
+  -o-animation: fadeIn 3s infinite alternate;
+  -ms-animation: fadeIn 3s infinite alternate;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.icon:hover {
+  animation: bounce 1s linear;
+  cursor: pointer;
+}
+
+@keyframes bounce {
+  20%,
+  50%,
+  80%,
+  to {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  70% {
+    transform: translateY(-15px);
+  }
+  90% {
+    transform: translateY(-4px);
+  }
 }
